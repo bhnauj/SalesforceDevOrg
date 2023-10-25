@@ -1,0 +1,27 @@
+<apex:page id="enrollmentcontroller" Controller="contactsavecontroller"  showHeader="true"  title="Register" >
+    <apex:define name="body">
+        <center>
+        <apex:form id="theform" forceSSL="true">
+            <apex:pageMessages id="error"/>
+            <h3>Note:All Fields are required.</h3>
+            <apex:panelGrid columns="2" style="margin-top:1em;">
+                <apex:outputLabel value="First Name" for="firstName"/>
+                <apex:inputField required="true" id="firstName" value="{!con.firstName}" label="First Name"/>
+                <apex:outputLabel value="Last Name" for="lastName" />
+                <apex:inputField required="true" id="lastName" value="{!con.lastName}"  label="Last Name"/>
+                <apex:outputLabel value="Department" for="department"/> 
+                <apex:inputField required="true" id="department" value="{!con.department}" label="Department" />
+                <apex:outputLabel value="Email" for="email"/> 
+                <apex:inputField required="true" id="email" value="{!con.email}" label="Email" />
+               
+                   <apex:commandButton action="{!save}" value="Submit" id="submit" rerender="theform" />
+                
+                 </apex:panelGrid>
+            <br/>   
+            </apex:form>
+             </center>
+        <br/>
+    
+    </apex:define>
+    
+</apex:page>

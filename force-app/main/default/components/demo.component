@@ -1,0 +1,23 @@
+<apex:component >
+    <apex:attribute name="testComponent" type="String" description="" />
+<!--    <apex:includeScript value="/lightning/lightning.out.js?v=2" />  -->
+    <apex:includeLightning />
+    <div id="lightning"  />
+    <p>
+        Hello, World!
+    </p>
+
+    <script>
+    /*  $Lightning.use("spanish.contacts", function() {});  */
+
+       $Lightning.use("spanish.TestLightApp", function() {
+            $Lightning.createComponent("spanish:contacts",
+                                       {label: ""}, 
+                                       "lightning",
+                                       function(cmp) {
+                                           //  Do some stuff
+                                       }
+            );
+        });
+    </script>
+</apex:component>

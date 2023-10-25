@@ -1,0 +1,26 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Account" icon-name="standard:account">
+        <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <lightning-record-edit-form record-id={recordId} object-api-name="Account"
+                onsuccess={handleSuccess} onsubmit ={handleSubmit}>
+            <lightning-messages>
+            </lightning-messages>
+            <lightning-input-field field-name="Parking__c">
+            </lightning-input-field>
+            <lightning-input-field field-name="Trash_Disposal__c">
+            </lightning-input-field>
+            <lightning-input-field field-name="Entrance_Instruction__c">
+            </lightning-input-field>
+            <div class="slds-align_absolute-center">
+            <lightning-button  variant="brand" type="submit" name="update" label="Update">
+            </lightning-button>
+            <lightning-button class="slds-m-left_x-small" variant="brand-outline" label="Cancel" type="cancel" onclick={handleCancel}></lightning-button>
+            </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+        
+
+   
+    
+    
+</template>

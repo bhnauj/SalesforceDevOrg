@@ -1,0 +1,567 @@
+<apex:page standardStylesheets="false" renderAs="pdf" sidebar="false" showHeader="false" >
+
+<html>
+<head>
+    <style media="print">
+        .clearfix:after {
+            content: " "; 
+            /* Older browser do not support empty content */
+            visibility: hidden; 
+            display: block; 
+            height: 0; 
+            clear: both;
+        }
+        
+        @page { 
+            size: 8.27in 11.69in; /* A4 width and height */
+        }
+        @page{
+            @bottom-left {
+            content: element(footer);
+            
+            }
+        }
+                
+        body {font-family: Helvetica, Arial;}
+        .main-container {
+            width: 100%;
+            border: 0px solid #ccc;
+            }
+        table {
+            width: 100%;
+            }
+        .pl-10 {
+            padding-left: 10px;
+        }
+        .pr-10 {
+            padding-right: 10px;
+        }
+        .ph-10 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            }
+        .ph-20 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            }
+        .pv-10 {
+            padding-left: 10px;
+            padding-right: 10px;
+            }
+          
+            
+        
+        div.footer {
+            display: block;
+            padding: 5px;
+            position: running(footer);
+        
+        }
+                
+   </style>
+</head>
+<body style="font-size:11px;">  
+  <!-- Main Container/Page 1 Start -->
+  <div class="main-container page-1" style="border:1px solid Black;">   
+    <!-- Header Start -->
+      <div style="border-bottom:1px solid black;">
+          <table>
+              <tr>
+                  <td style="width:35%;"> </td>
+                  
+                  <td style="width:25%;"> 
+                      <span style="float:right;"> 
+                          <center>
+                              <b> TAX INVOICE </b>
+                          </center>
+                      </span>
+                  </td>
+                  <td style="width:10%;"> </td>
+                  <td style="width:20%;"> <b> ORIGINAL - BUYER&apos;S COPY </b> </td>
+              </tr>
+          </table>
+      </div>
+      
+      <div class="header" >
+          <table class="header-table" border="0" width="100%">
+              <tr>
+                  <td style="width:25%;">
+                      <!-- Logo Start -->
+                      <div class="logo"  >
+                          
+                      </div>
+                      <!-- Logo End -->
+                  </td>
+                  <td style="text-align:center;width:50%;">
+                      <span> 
+                          <b>ABC Company<br/>
+                              6th lane ,2nd floor<br/>
+                              Near sector 15 metro station<br/>
+                              Noida - 201301<br/>
+                              Phone - 9855550983
+                          </b>   <!--{!$Label.Company_address_Invoice}-->
+                      <br/>
+                          
+                      </span>
+                      <span style="font-size: 12px;">   E-mail : nagpal.bhanuj@hotmail.com, Website : www.ry.com </span> <br/>
+                      <span style="margin-left:-20px;"> FSSAI No : 006695500054121&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> <br/>
+                  </td>
+                  <td style="width:25%;"> </td>            
+              </tr>
+              <tr>  
+                  <td colspan="3"> <span style="margin-left:225px;"> <b>TMCO No : </b>   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <b>PAN NO - &nbsp; &nbsp;112365986 </b> </span> </td>
+              </tr>
+              <tr>
+                  <td colspan="3" style="border-bottom:1px solid black;"> <b> GSTIN : 112200559 </b> </td>
+              </tr>
+              <tr>
+                  <td colspan="3" style="border-bottom:1px solid black;"> CIN No. &nbsp; &nbsp; &nbsp; PAN No. &nbsp; &nbsp; &nbsp; FSSAI No. </td>
+              </tr>        
+              <tr>
+                  <td colspan="3" style="border-bottom:1px solid black;">
+                      <table>
+                          <tr>
+                              <td style="width:45%;vertical-align:top;border-right:1px solid black;">
+                                  <span style="font-size:12px;">  
+                                      <b> Buyer : </b>&nbsp;&nbsp; Raman chawla <br/>
+                                     HNO-168 , A4c ,Janakpuri <br/> 
+                                     Delhi -110065   
+                                  </span>                                                                                                                                                                                                                
+                                  <br/>
+                                  <div style="margin-top:20px;"> 
+                                      <table style="width:100%;">
+                                          <tr> 
+                                              <td>
+                                                  <b>GSTIN -</b> 155633200
+                                              </td>
+                                              <td>
+                                                  <b>Pan No -</b>26598945126
+                                              </td>
+                                          </tr>  
+                                          <tr>
+                                              <td> </td>
+                                              <td >
+                                                  <b>FSSAI Lic No -</b>6698987452
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td> 
+                                                  <b>State :</b> Delhi
+                                              </td>
+                                          </tr>
+                                      </table>    
+                                  </div>    
+                              </td>
+                              <td style="width:30%; border-right:1px solid black; vertical-align:top;">
+                                  <b>Place of Supply/Delivery :  </b> <br/>
+                                  <span style="font-size:10px;">    
+                                      Distributor Name  <br/>
+                                      ShippingStreet
+                                      ShippingCity
+                                      ShippingState
+                                      ShippingPostalCode
+                                      
+                                      <b>GSTIN :</b>  <br/>
+                                      <b>State :</b>  
+                                      <br/> <br/>
+                                      <b>Cont. Person :</b> <br/>
+                                      <b>Cont. No :</b> 
+                                  </span>    
+                              </td>
+                              <td style="width:25%;vertical-align:top;">
+                                  <table style="font-size:12px;height:100%;width:100%;">
+                                      <tr>
+                                          <th>   Invoice No. : </th>
+                                          <td>TI </td>
+                                      </tr>
+                                      <tr>
+                                          <th>   Invoice Date :  </th>
+                                          <td>  </td>
+                                      </tr>
+                                      <tr>
+                                          <th>  Order No. :</th>
+                                          <td>  </td>
+                                      </tr>
+                                      <tr>
+                                          <th>  Order Date :  </th>
+                                          <td>  </td>
+                                      </tr>
+                                      <tr>
+                                          <th>  Salesman     :  </th>
+                                          <td>  </td>
+                                      </tr>
+                                      <tr>
+                                          <th>   Due Date  : </th>
+                                          <td>  
+                                          </td>
+                                          
+                                      </tr>
+                                  </table>
+                              </td>
+                              
+                          </tr>
+                          
+                      </table> 
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="3" >
+                      <table border="1" cellspacing="0" style="width:100%;" >
+                          <tr style="font-size:12px;">
+                              <th >Item/HSN Cd </th>
+                              <th >Desc of Goods </th>
+                              <th >Packing(In K.G.) </th> 
+                              <th colspan="4" align="center">Quantity </th>
+                              <th >Rate </th> 
+                              <th >Per </th>
+                              <th >Discount </th>
+                              <th >Amount </th>
+                              <th >MRP </th>
+                          </tr>   
+                          
+                              <tr style="font-size:12px;">
+                                  <td>
+                                      1234
+                                  </td>
+                                  <td>
+                                      alpha red 100 grms
+                                  </td>
+                                  
+                                  <td>
+                                      grams
+                                  </td>
+                                  
+                                  <td>
+                                      100
+                                  </td>
+                                  <td>
+                                      kg
+                                  </td>
+                                  <td>
+                                      grms
+                                  </td>
+                                  <td>
+                                      grms
+                                  </td>
+                                  
+                                  <td>
+                                      product
+                                  </td>
+                                  <td>
+                                      kg
+                                  </td>
+                                  
+                                  <td>
+                                      10
+                                  </td>
+                                  <td>
+                                      120
+                                  </td>
+                                  <td>
+                                      126
+                                  </td>
+                              
+                                </tr>
+                            
+                        <!--</table>
+                    </td>
+              </tr>
+              <tr></tr>
+              <tr></tr>
+              <tr></tr>
+              <tr></tr>
+                <tr style="border:1px solid red;font-size:12px;">
+                <td colspan="3">
+                    <table border="1" cellspacing="0"  style="width:100%;">
+-->
+                        <tr>
+                             <td colspan="2" align="center"> Taxable Value :&nbsp;&nbsp;  </td>   
+                            <td align="center">Total >>></td>
+                            <td colspan="2"></td>
+                            <td colspan="2" ></td>
+                            <td></td>
+                            <td></td>
+                            <td align="left"></td>
+                            <td align="left" colspan="2" >}</td>                   
+                        </tr>    
+                    </table>
+                </td>
+                </tr>
+               <tr>
+                   <td colspan="3" style="border:1px solid black;" >
+                       <table  cellspacing="0" style="width:100%;" >
+                           <tr>
+                               <td style="vertical-align:top;">
+                               <span><b>Bank:</b>   </span> <br/>
+                               <span> <b>Branch:</b> </span><br/>
+                               <span><b>Account No. :</b>  </span><br/>
+                               <span> <b>ISFC Code :</b> </span> <br/>
+                               </td>
+                               <td style="width:50%;vertical-align:top;">
+                                   <table border="1" cellspacing="0" style="width:100%;font-size:12px;">
+                                       <tr>
+                                           <td>LESS : DISCOUNT </td>
+                                           <td> </td>
+                                           <td></td> 
+                                       </tr>
+                                       <tr>
+                                           <td>ADD : CGST 2.50% </td>
+                                           <td>  </td>
+                                           <td>}</td>
+                                       </tr>
+                                       <tr>
+                                           <td>ADD : SGST 2.50% </td>
+                                           <td> </td>
+                                           <td></td>
+                                       </tr>
+                                       <tr>
+                                           <td>ADD : ROUND OFF </td>
+                                           <td></td>
+                                           <td></td>
+                                       </tr>
+                                       
+                                       <tr>
+                                            <td>
+                                                Net Amount
+                                           </td>
+                                           <td></td>
+                                           <td>
+                                                 
+                                           </td>
+                                       </tr>
+                                       
+                                   </table>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td colspan="3"> **** Tax Payable on Reverse Charge Basis : NIL      </td>
+                           </tr>
+                       </table>
+                   </td>
+                   <tr>
+                       <td colspan="3" >
+                          <span style="margin-left:20px;font-size:12px;text-transform:capitalize;"> Rupees:  Only </span>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="3" style="border:1px solid black;">
+                           <table cellspacing="0" style="width:100%;font-size:12px;">
+                               <tr>
+                                   <td style="width:120px;"> <b> <u> Transport Details : </u> </b> </td> 
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"><b>Insurer:</b> </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"><b>Policy No. :</b> </td>
+                                   <td style="width:80px;"> </td>
+                               </tr>
+                               <tr>
+                                   <td style="width:80px;"><b>Mode of Transport:</b> </td>
+                                   <td style="width:80px;"></td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"><b>Way Bill No.</b> </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"><b>Total Packages: </b></td>
+                                   <td style="width:80px;"> </td>
+                               </tr>
+                               <tr>
+                                   <td style="width:80px;"><b>Transporter :</b> </td>
+                                   <td style="width:80px;" colspan="3"> </td>
+                                   <!---<td style="width:80px;"> </td>
+                                   <td style="width:80px;"> </td>-->
+                                   <td style="width:100px;"><b>Trans. Address : </b></td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:110px;"><b>Trans. Cont. No. :</b> </td>
+                                   <td style="width:80px;"> </td>
+                               </tr>
+                               <tr>
+                                   <td style="width:80px;"><b>Net Weight :</b> </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"><b>Gross Weight :</b> </td>
+                                   <td style="width:80px;"></td>
+                                   <td style="width:100px;"><b>Charged Weight :</b> </td>
+                                   <td style="width:80px;"> </td>
+                               </tr>
+                               <tr>
+                                   <td style="width:80px;"><b>C/N No. :</b> </td>
+                                   <td style="width:80px;">  </td>
+                                   <td style="width:80px;"><b>Date :</b> </td>
+                                   <td> </td>
+                                   <td style="width:80px;"><b>Vehicle No. :</b> </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"><b>D.L. No. :</b> </td>
+                                   <td style="width:80px;"> </td> 
+                               </tr>
+                               <tr>
+                                   <td style="width:80px;"><b>Driver Name : </b></td>
+                                   <td style="width:80px;" colspan="3"> </td>
+                                   
+                                   <td style="width:80px;"><b>Driver Mob :</b></td>
+                                   <td style="width:80px;"></td>
+                                   <td style="width:80px;"><b>Driver Add :</b> </td>
+                                   <td style="width:80px;"> </td>
+                               </tr>
+                                <tr>
+                                   <td style="width:80px;"><b>Owner Name :</b></td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;">  </td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"><b>Owner Mob :</b></td>
+                                   <td style="width:80px;"> </td>
+                                   <td style="width:80px;"><b>Owner Add :</b> </td>
+                                   <td style="width:80px;"></td>
+                               </tr>
+                           </table>
+                       </td>
+                   </tr>
+                       <tr>
+                           <td colspan="3" style="vertical-align:top;border-bottom:1px solid black;">
+                               <span>Declaration : We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct. <br/>
+                                Note # Under consumer item for of Tea (Tea value includes consumer item cost if any)<br/>
+                                Note # POP meterial is only for promotion not for sale </span>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td colspan="3" style="vertical-align:top;border-bottom:1px solid black;">
+                               <span>Terms &#38; Conditions <br/>
+                                    1. Payments are to be made by DD/Cheque/ NEFT/ RTGS as agreed by the Company/ Seller. <br/>
+                                    2. Intrest @ 24% shall be charged if the amount of invoice is not paid by due date. <br/>
+                                    3. Goods once sold can not be returned and / or exchanged. <br/>
+                                    4. Claim of any nature what so ever will lapse unless rised in writing with in three days of the receipt of goods. <br/>
+                                    5. All disputes arrising from this invoice shall be referred to the sole Arbitrator duly appointed by the Company/ Seller and venue of the <br/>
+                                    arbitration shall be at Delhi only. </span>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td colspan="3" style="vertical-align:top;height:90px;">
+                               <table style="width:100%;">
+                                   <tr>
+                                       <td> <b> SUBJECT TO JURIDICTION </b> </td>
+                                       <td> <span style="float:Right;"> <b> For : </b> </span> </td> 
+                                   </tr>
+                                   <tr>
+                                       <td><b>Reg. Office :</b>   </td>
+                                   </tr>
+                                   <tr>
+                                       <td><b>HO :</b>  </td>
+                                       
+                                       <td></td>
+                                       <td></td>
+                                   </tr>
+                                   <tr>
+                                       <td> <b> Remarks : </b> </td>
+                                       <td> <span style="float:Right;"> <b> Authorised Signatory </b> </span> </td> 
+                                   </tr>
+                               </table>
+                           </td>
+                       </tr>
+               </tr> 
+        </table>
+      <!--  <table>
+        <tr>
+            <td class="ph-20 pl-10">
+                <b> Billed To: </b> <br/>
+                 Retailor Name <br/>
+                 BillingStreet <br/>
+                 BillingCity <br/>
+                 BillingState <br/>
+                 BillingPostalCode
+                 
+            </td>
+            <td class="ph-20 pr-10" style="text-align:right;">
+                <b>Order Number: </b><br />
+                 <b>Order Date: </b><br />
+            </td>
+        </tr>
+    </table>
+    <table border="1" style="border-collapse: collapse;width:100%;" class="ph-20">
+            
+            <tr class="heading">
+                <td>
+                    Product
+                </td>
+                <td>
+                    List Price
+                </td>
+                <td>
+                    Quantity
+                </td>
+                <td>
+                    Sales Price
+                </td>
+                <td>
+                    Discount %
+                </td>
+                <td>
+                    Net Price
+                </td>
+            </tr>
+            <apex:repeat value="{!orderLineItemList }" var="a"  >
+                <tr>
+                    <td>
+                    Product Name
+                    </td>
+                    <td>
+                    List Price
+                    </td>
+                    <td>
+                    Quantity
+                    </td>
+                    <td>
+                    Sales Price
+                    </td>
+                    <td>
+                    Discount
+                    </td>
+                    <td>
+                    Net Price
+                    </td>
+                </tr>
+            </apex:repeat>
+            
+            <tr>
+                <td colspan="5">
+                    <span style="float:right;font-size:12px;"> <b></b> </span>
+                </td>
+                <td>
+                    <span style="float:left;font-size:12px;" > </span>
+                </td>
+            
+            </tr>
+            
+            <tr>
+                 <td colspan="5">
+                    <span style="float: right;font-size:12px;"> <b></b> </span>
+                </td>
+                <td>
+                    <span style="float:left;font-size:12px;">  </span>
+                </td>
+            
+            </tr>
+            
+            <tr>
+                <td colspan="5">
+                    <span style="float:right;font-size:12px;"> <b> TOTAL </b> </span>
+                </td>
+                <td>
+                    <span style="float:left;font-size:12px;"> <b></b> </span>
+                </td>
+            
+            </tr>
+            </table> -->
+           
+            
+            
+  </div>
+  <!-- Header End -->  
+  </div>
+  <div class="footer">
+    <div><span style="font-size:8px;"> <center> This is a Computer Generated Invoice </center> </span></div>
+  </div>
+  </body>
+  </html>
+  </apex:page>

@@ -1,0 +1,25 @@
+<apex:page controller="wrappperExampleController" showHeader="false" lightningStylesheets="true" sidebar="false" >
+    <apex:form >
+        
+    	<apex:pageBlock >
+            <apex:actionFunction name="removeSelected"  />
+        	<apex:pageBlockTable value="{!WrapList}" var="w">
+                <apex:column headerValue="Action" >
+                    <apex:inputCheckbox value="{!w.checkbox}" onselect="" />
+                </apex:column>   
+                <apex:column headerValue="Account Name">
+                    <apex:outputField value="{!w.acc.Name}" /></apex:column>
+                <apex:column headerValue="Phone" > {!w.acc.Phone} </apex:column>
+                 
+            
+            
+            </apex:pageBlockTable>
+            <apex:commandButton value="Remove" action="{!RemoveAcc}" />
+        
+        </apex:pageBlock>
+    
+    
+    </apex:form>
+    
+    
+</apex:page>

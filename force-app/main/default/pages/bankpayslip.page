@@ -1,0 +1,311 @@
+<apex:page showHeader="false" sidebar="false" renderAs="pdf">
+<div style="border:1px solid red;">
+ <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td style="width:15px;"> </td>
+            <td colspan="40" style="width:680px; border:1px solid black;"><strong style="margin-left:100px;">Debit Mandate Form NACH / ECS / DIRECT DEBIT</strong></td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+   <div style="border:1px solid blue;">
+ <table align="center">
+ <tbody>
+ <tr>
+            <td colspan="2" style="width:16px;">UMRN</td>
+            <td style="width:15px;border:1px solid black;">1</td>
+            <td style="width:15px;border:1px solid black;">2</td>
+            <td style="width:15px;border:1px solid black;">3</td>
+            <td style="width:15px;border:1px solid black;">4</td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:60px;">Date</td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+             </tr>
+           </tbody>
+        </table>
+        </div>
+  <div style="clear:both;">
+  <div class="left" style="width:40%;float:left;border:1px solid green;">
+  <div style="width:40%;float:left;font-size:14px; border:1px solid yellow;">Sponsor Bank Code</div>
+    <div style="width:55%;float:left;border:1px solid blue;">
+    <table border="0" style="border:1px solid red;width:16px;height:16px;">
+    <tr>
+       
+    </tr>
+    </table>
+    
+    </div>
+  </div>
+  <div class="right" style="width:50%;float:left;">right</div>
+  </div>
+  <br /><br />
+ <table align="center">
+ <tbody>
+ <tr>
+            <td colspan="2" style="width:206px;">Sponsor Bank Code</td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td  style="width:90px;">Utility Code</td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td style="width:15px;border:1px solid black;"> </td>
+            <td colspan="2" style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="2" style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="2" style="width:13px;"> </td>
+            <td style="width:5px;"> </td>
+        </tr>
+       </tbody>
+       </table> 
+       <table style="margin-left:100px;">
+       <tbody>
+       <tr>
+       
+            <td colspan="2" rowspan="4" style="width:45px;border:1px solid black">Tick (P)<br />
+            PCREATE<br />
+            MODIFY<br />
+            CANCEL</td>
+            <td style="width:15px;"> </td>
+            <td colspan="48" style="width:635px;"> </td>
+        </tr>
+        <tr style="margin-left:40px;">
+            <td colspan="22" style="width:140px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I/We hereby authorize</td>
+            <td colspan="18" style="width:241px;border:1px solid black"><strong>INDIA SHELTER FINANCE CORPORATION LIMITED</strong></td>
+            <td colspan="6" style="width:90px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To debit tick (P)</td>
+            <td style="width:15px;"> </td>
+            <td colspan="15" style="width:178px;border:1px solid black">SB /CA /CC /SBNRE/SB- NRO/Other</td>
+            <td style="width:5px;"> </td>
+        </tr>
+        <tr>
+            <td style="width:15px;"> </td>
+            <td colspan="48" style="width:635px;"> </td>
+        </tr>
+        <tr>
+            <td colspan="20" style="width:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bank a/c number</td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td style="width:15px;border:1px solid black"> </td>
+            <td colspan="0" style="width:15px;"> </td>
+            <td colspan="0" style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="0" style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="0" style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="0" style="width:13px;"> </td>
+            <td style="width:5px;"> </td>
+        </tr>
+        <tr>
+            <td style="width:15px;"> </td>
+            <td colspan="50" style="width:680px;"> </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width:60px;">With Bank</td>
+            <td colspan="12" style="width:181px;"> </td>
+            <td colspan="4" style="width:60px;">IFSC</td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="2" style="width:15px;"> </td>
+            <td colspan="2" style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="4" style="width:45px;">Or MICR</td>
+            <td colspan="2" style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="2" style="width:13px;"> </td>
+            <td style="width:5px;"> </td>
+        </tr>
+        <tr>
+            <td style="width:15px;"> </td>
+            <td colspan="50" style="width:680px;"> </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="width:105px;">anamountofRupees</td>
+            <td colspan="32" style="width:436px;"> </td>
+            <td colspan="2" style="width:15px;"> </td>
+            <td colspan="2" style="width:30px;"><img height="11" src="file:///C:/Users/Admin/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png" width="8" /></td>
+            <td colspan="8" style="width:103px;"> </td>
+            <td style="width:5px;"> </td>
+        </tr>
+        <tr>
+            <td style="width:15px;"> </td>
+            <td colspan="50" style="width:680px;"> </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="width:75px;"><strong>FREQUENCY</strong></td>
+            <td style="width:15px;"> </td>
+            <td colspan="45" style="width:600px;">£Mthly£Qtly£H-Yrly£YrlyRAs when presented                <strong>DEBITTYPE</strong>£ FixedAmount<img height="11" width="12" />Maximum Amount</td>
+            <td style="width:5px;"> </td>
+        </tr>
+        <tr>
+            <td style="width:15px;"> </td>
+            <td colspan="50" style="width:680px;"> </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="width:75px;">Reference1</td>
+            <td style="width:15px;"> </td>
+            <td colspan="23" style="width:316px;">{$FirstName}</td>
+            <td colspan="5" style="width:75px;">Phone No</td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="2" style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="2" style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td style="width:15px;"> </td>
+            <td colspan="5" style="width:48px;"> </td>
+        </tr>
+        <tr>
+            <td style="width:15px;"> </td>
+            <td colspan="50" style="width:680px;"> </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="width:75px;">Reference2</td>
+            <td style="width:15px;"> </td>
+            <td colspan="23" style="width:316px;">{$LastName}</td>
+            <td colspan="5" style="width:75px;">Email ID</td>
+            <td colspan="17" style="width:208px;">{$Email}</td>
+            <td style="width:5px;"> </td>
+        </tr>
+       </tbody>
+       </table> 
+  
+</apex:page>

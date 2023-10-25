@@ -1,0 +1,13 @@
+<apex:page lightningStylesheets="true" standardController="Opportunity" extensions="cloneOpportunityApexController">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <span style="font-size:22px;font-weight:bold">Please confirm if you want to copy the Existing Opportunity.</span><br/>
+                <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 30% 50%">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/e/ed/Cursor_Windows_Vista.gif" />
+                </div><br/>
+                <apex:commandButton action="{!cloneOpp}" value="Copy!"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

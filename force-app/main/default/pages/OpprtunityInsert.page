@@ -1,0 +1,21 @@
+<apex:page Controller="NewAndExistingController">
+<apex:form >
+ <apex:pageBlock >
+<apex:pageBlockButtons >
+  <apex:commandButton value="Save" action="{!SaveMethod}"/>
+ 
+</apex:pageBlockButtons>
+   <apex:pageBlockSection >
+       
+           <apex:inputField value="{!opp.Name}" label="Opportunity Name" />
+           <apex:inputField value="{!opp.StageName}" label="StageName"/>
+           <apex:inputField value="{!opp.CloseDate}" label="CloseDate"/>
+           <apex:inputField value="{!opp.Amount}" label="Amount"/>
+
+               
+
+       
+   </apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

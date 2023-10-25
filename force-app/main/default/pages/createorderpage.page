@@ -1,0 +1,124 @@
+<apex:page Controller="orderProductEntryExtension" sidebar="false" id="pageid" >
+
+           
+    <style> 
+        .search{
+            font-size:14pt;
+            margin-right: 20px;    
+        }
+        .fyi{
+            color:red;
+            font-style:italic;
+        }
+        .label{ 
+            margin-right:10px;
+            font-weight:bold;
+        }
+    </style>
+    
+    <script type='text/javascript'>
+    
+        // This script assists the search bar functionality
+        // It will execute a search only after the user has stopped typing for more than 1 second
+        // To raise the time between when the user stops typing and the search, edit the following variable:
+        
+        var waitTime = 1;
+        
+    
+        var countDown = waitTime+1;
+        var started = false;
+        
+        function resetTimer(){
+        
+            countDown=waitTime+1;
+            
+            if(started==false){
+                started=true;
+                runCountDown();
+            }
+        }
+        
+        function runCountDown(){
+        
+            countDown--;
+            
+            if(countDown<=0){
+                fetchResults();
+                started=false;
+            }
+            else{
+                window.setTimeout(runCountDown,1000);
+            }
+        }
+    
+    function callitem(){
+    alert('hi');
+    }
+        </script>
+   
+  
+    <apex:form >
+    
+       
+    <apex:actionFunction id="addlineid" action="{!addlineitem}" name="addline" >
+      <apex:param name="state" assignTo="{!state}" value="update"/>
+</apex:actionFunction>
+       
+    
+         <apex:pageBlock title="Selected Product" id="selected">
+                       
+                <apex:pageblockTable value="{!shoppingCart}" var="s">
+                
+                    <apex:column >
+                        <apex:commandLink value="Remove" action="{!removeFromShoppingCart}"  immediate="true" reRender="pageid">
+                            <!-- this param is how we send an argument to the controller, so it knows which row we clicked 'remove' on -->
+                            <apex:param value="{!s.Id}" assignTo="{!toUnselect}" name="toUnselect"/>
+                        </apex:commandLink>
+                    </apex:column>
+                    <apex:column headerValue="Product Name">
+                        <apex:outputText value="{!s.Product__r.name}" />
+                    </apex:column>
+                    <apex:column headerValue="Product Price">
+                        <apex:inputField value="{!s.Price__c}" required="false"/>
+                    </apex:column>
+                    <apex:column headerValue="Unit Price">
+                        <apex:outputField value="{!s.Product__r.Unit_Price__c}" />
+                        </apex:column>
+                    <apex:column headerValue="Product Quantity">
+                        <apex:inputField value="{!s.Quantity__c}" required="false"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Order Name">
+                        <apex:inputField value="{!s.Order__c }" required="false"/>
+                    </apex:column>
+                    </apex:pageblockTable>
+                    </apex:pageBlock>
+                    
+     <apex:pageBlock >
+     <apex:pageBlockTable value="{!allProducts}" var="s">
+     
+            <apex:column headerValue="Product Name">
+                        <apex:outputText value="{!s.Name}" />
+                    </apex:column>
+                    <apex:column headerValue="Product Price">
+                        <apex:outputText value="{!s.Price__c}" />
+                    </apex:column>
+                    
+                    
+                    <apex:column headerValue="Action">
+                        <apex:commandLink value="Select" action="{!addlineitem}" reRender="pageid">
+                            <apex:param value="{!s.Id}" assignTo="{!toselect}" name="toselect" />
+                        </apex:commandLink>
+                    </apex:column>
+     
+     </apex:pageBlockTable>
+     
+     
+     
+     
+     
+     </apex:pageBlock>               
+                    
+                    
+                    </apex:form>
+                    </apex:page>

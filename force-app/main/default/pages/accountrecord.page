@@ -1,0 +1,22 @@
+<apex:page standardController="Account" showHeader="true">
+<apex:form >
+<apex:pageBlock title="Account Edit">
+<apex:pageBlockSection title="Account Detail">
+<apex:inputField value="{!account.name}"/>
+<apex:inputField value="{!account.site}"/>
+<apex:inputField value="{!account.type}"/>
+<apex:outputField value="{!account.ownerid}"/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+<apex:pageBlock title="Contacts">
+<apex:pageBlockSection title="Make New Contacts">
+
+
+
+
+</apex:pageBlockSection>
+
+
+</apex:pageBlock>
+ </apex:form>
+</apex:page>

@@ -1,0 +1,550 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" lightningStylesheets="true" applyBodyTag="false" applyHtmlTag="false">
+    
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Visit Plan</title>
+        <apex:slds />
+        <style>
+        	.lsBrd {
+    			border: 1px solid #f2f2f2;
+            	padding: 5px;
+			}
+            .lsBrd:hover {
+    			border: 1px solid #c1c1c1;
+			}
+            .slds-card__footer, .slds-tabs_default__nav {
+            	background: #fff;
+            }
+        </style>
+    </head>
+<body onload="windowHeight()">
+	<div class="slds-scope">
+        <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+            <article class="slds-card">
+                  <div class="slds-card__body slds-card__body_inner">
+                    <div class="slds-tabs_default">
+                      <ul class="slds-tabs_default__nav" role="tablist">
+                        <li class="slds-tabs_default__item slds-is-active" title="Item One" role="presentation"><a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">Item One</a></li>
+                        <li class="slds-tabs_default__item" title="Item Two" role="presentation"><a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="tab-default-2__item">Item Two</a></li>
+                        <li class="slds-tabs_default__item" title="Item Three" role="presentation"><a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">Item Three</a></li>
+                      </ul>
+                      <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+                          <div class="tileLs" id="tileLs" style="display:block;">
+                                <ul class="slds-card__body_inner slds-grid slds-wrap slds-grid_pull-padded slds-m-horizontal_xxx-small slds-p-horizontal_xxx-small">
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-small-size_1-of-3 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Edit">                                                          
+                                                            Edit
+                                                        </button>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                              </ul>  
+                          </div>
+                          <div class="addItem" id="addItem" style="display:none;">
+                             <div class="slds-grid slds-wrap">
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="input-unique-id">Account Name</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="Account Name" />
+                                      </div>
+                                    </div>
+                                      
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="input-unique-id">Contact(s)</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="Contact(s)" />
+                                      </div>
+                                    </div>
+                                  
+                                  </div>
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="input-unique-id">Visit Country</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="Visit Country" />
+                                      </div>
+                                    </div>
+                                      
+                                    <div class="slds-form-element">
+                                        <label class="slds-form-element__label" for="input-unique-id">Visit City/Port</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="Visit City/Port" />
+                                      </div>
+                                    </div>
+                                  
+                                  </div>
+                                 
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                    <div class="slds-form-element">
+                                        <label class="slds-form-element__label" for="input-unique-id">Visit City/Port</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="Visit City/Port" />
+                                      </div>
+                                    </div>
+                                  </div>                                 
+                                 <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                  <div class="slds-form-element">
+                                  <label class="slds-form-element__label" for="input-unique-id">Agenda</label>
+                                  <div class="slds-form-element__control">
+                                    <textarea id="input-unique-id" class="slds-textarea" placeholder="Agenda"></textarea>
+                                  </div>
+                                </div>
+                                 </div>
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                  <div class="slds-form-element">
+                                  <label class="slds-form-element__label" for="input-unique-id">Feedback</label>
+                                  <div class="slds-form-element__control">
+                                    <textarea id="input-unique-id" class="slds-textarea" placeholder="Feedback"></textarea>
+                                  </div>
+                                </div>
+                                 </div>                                  
+                                 <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 slds-p-around_xx-small">
+                              		<div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <span class="slds-checkbox">
+                                                <input type="checkbox" name="options" id="checkbox-5" value="on" />
+                                                <label class="slds-checkbox__label" for="checkbox-5">
+                                                    <span class="slds-checkbox_faux"></span>
+                                                    <span class="slds-form-element__label">Assign Task</span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                	</div>
+                        		</div>
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="input-unique-id">Subject</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="Subject" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="input-unique-id">Assign To</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="Assign To" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="input-unique-id">Follow-up Date</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="Follow-up Date" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="input-unique-id">Remarks</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="Remarks" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="input-unique-id">User or Group</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="User or Group" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="slds-size_1-of-1 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-p-around_xx-small">
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="input-unique-id">User</label>
+                                      <div class="slds-form-element__control">
+                                        <input type="text" id="input-unique-id" class="slds-input" placeholder="User" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                 	<h2 class="site-text-heading--label">Results</h2>
+                                 	<ul class="slds-card__body_inner slds-grid slds-wrap slds-grid_pull-padded slds-m-horizontal_xxx-small slds-p-horizontal_xxx-small">
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-small-size_1-of-3 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <svg class="slds-button__icon slds-button__icon_hint" aria-hidden="true">
+                                                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down" /> 	
+                                                              <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                                                          </svg>
+                                                          <span class="slds-assistive-text">More options</span>
+                                                      </div> 
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <svg class="slds-button__icon slds-button__icon_hint" aria-hidden="true">
+                                                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down" /> 	
+                                                              <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                                                          </svg>
+                                                          <span class="slds-assistive-text">More options</span>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="slds-p-horizontal_xxx-small slds-size_1-of-1 slds-medium-size_1-of-3">
+                                        <article class="slds-tile slds-media slds-card__tile slds-hint-parent lsBrd">
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-has-flexi-truncate">
+                                                    <h3 class="slds-tile__title slds-truncate" title="Related Record Title 1"><a href="javascript:void(0);">Related Record Title 1</a></h3>
+                                                    <div class="slds-shrink-none">
+                                                        <svg class="slds-button__icon slds-button__icon_hint" aria-hidden="true">
+                                                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down" /> 	
+                                                              <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#down')}"></use>
+                                                          </svg>
+                                                          <span class="slds-assistive-text">More options</span>
+                                                      </div>                                                    
+                                                </div>
+                                                <div class="slds-tile__detail">
+                                                    <dl class="slds-list_horizontal slds-wrap">
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Third Label:</dt>
+                                                        <dd class="slds-item_detail slds-truncate" title="Description for third label">Description for third label</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                 </ul>
+                                </div>
+                              
+                          </div>
+                      </div>
+                      <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">Item Two Content</div>
+                      <div id="tab-default-3" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-3__item">Item Three Content</div>
+                    </div>
+                  </div>
+                  <footer class="slds-card__footer">
+                    <div class="slds-no-flex" style="display:none;" id="saveBtn">
+                      <button class="slds-button slds-button_brand">Save</button>
+                      <button class="slds-button slds-button_brand">Save and New</button>
+                      <button class="slds-button slds-button_neutral" onclick="cancelNew()">Cancel</button>
+                    </div>  
+                    <div class="slds-no-flex" id="addBtn" style="display:block;">
+                      <button class="slds-button slds-button_brand" onclick="addNew()">Add New</button>
+                    </div>  
+                  </footer>
+            </article>               
+        </div>
+    	 
+    </div>
+    <script>
+		
+		/* Toggle Functionality */
+	
+    	function addNew() {
+            var a = document.getElementById("tileLs");
+            var b = document.getElementById("addBtn");
+            var c = document.getElementById("addItem");
+            var d = document.getElementById("saveBtn");
+                if (a.style.display === "block" && c.style.display === "none") {
+                    a.style.display = "none";
+                    b.style.display = "none";
+                    c.style.display = "block";
+                    d.style.display = "block";
+                }
+            }
+		
+		
+		function cancelNew() {
+            var a = document.getElementById("tileLs");
+            var b = document.getElementById("addBtn");
+            var c = document.getElementById("addItem");
+            var d = document.getElementById("saveBtn");
+                if (a.style.display === "none" && c.style.display === "block") {
+                    a.style.display = "block";
+                    b.style.display = "block";
+                    c.style.display = "none";
+                    d.style.display = "none";
+                }
+            }
+    
+		/* For Calculating Windows Height */
+    
+        function windowHeight() {
+			var height = window.innerHeight;
+			var tileLs = document.getElementById('tileLs');
+			var addItem = document.getElementById('addItem');
+			if (height <= 700) {
+			var usableHeight = height - 155;
+			tileLs.style.height = usableHeight + "px";
+			tileLs.style.overflowY = "scroll";
+			tileLs.style.overflowX = "hidden";
+			addItem.style.height = usableHeight + "px";
+			addItem.style.overflowY = "scroll";
+			addItem.style.overflowX = "hidden";
+				}
+        }
+    </script>
+</body>
+</html>
+</apex:page>

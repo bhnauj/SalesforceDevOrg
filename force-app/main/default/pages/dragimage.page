@@ -1,0 +1,5 @@
+<apex:page standardController="Account" extensions="displayImageExtension">
+<apex:form >
+<apex:image url="/servlet/servlet.FileDownload?file={!FileId}"/>
+</apex:form>
+</apex:page>

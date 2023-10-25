@@ -1,0 +1,822 @@
+<apex:page >
+    <apex:slds />
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, shrink-to-fit=yes" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.print.css" />
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js" integrity="sha384-F13mJAeqdsVJS5kJv7MZ4PzYmJ+yXXZkt/gEnamJGTXZFzYgAcVtNg5wBDrRgLg9" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./pb.calendar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js" />
+<script> 
+    $(function() {
+        
+        // page is now ready, initialize the calendar...
+        
+        $('#calendar').fullCalendar({
+            // put your options and callbacks here
+        })
+        
+    }); 
+</script> 
+ <div style="font-size:10px;"> <!-- main Div -->
+    <div class="slds-grid slds-grid_vertical"> 	<!--first Header Div -->
+        <div class="slds-col">
+            <span>1</span>
+        </div>
+    </div>
+     
+     <div class="slds-grid slds-wrap"> <!-- main block  with 8/4 partion -->
+         <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_8-of-12">
+             <div class="slds-grid slds-grid_vertical-reverse" >
+                 <div class="slds-col">
+                     <article class="slds-card">
+                         <div class="slds-card__header slds-grid">
+                             <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                 <div class="slds-media__body">
+                                     <h2 class="slds-card__header-title">
+                                        <span> Transaction Ledger/history </span>
+                                     </h2>
+                                 </div>
+                                 
+                             </header>
+                         </div>
+                         <span class="slds-float_right">Print Transaction &nbsp;</span> 
+                         <span class="slds-float_right">Transaction PDF's &nbsp;</span>
+                         <span class="slds-float_right">Add Transaction&nbsp;&nbsp;&nbsp;</span>
+                         <span class="slds-float_right">Financial Balance : $0.00  &nbsp;&nbsp;&nbsp;</span>
+                         
+                         <div class="slds-card__body slds-card__body_inner">
+                             <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                                 <thead>
+                                     <tr class="slds-text-title_caps">
+                                         <th scope="col">
+                                             <div class="slds-truncate" title="Opportunity Name">Date</div>
+                                         </th>
+                                         <th scope="col">
+                                             <div class="slds-truncate" title="Account Name">Doctor</div>
+                                         </th>
+                                         <th scope="col">
+                                             <div class="slds-truncate" title="Close Date">Transaction Name</div>
+                                         </th>
+                                         <th scope="col">
+                                             <div class="slds-truncate" title="Stage">Mode Of Payment</div>
+                                         </th>
+                                         <th scope="col">
+                                             <div class="slds-truncate" title="Confidence">Change</div>
+                                         </th>
+                                         <th scope="col">
+                                             <div class="slds-truncate" title="Amount">Tax</div>
+                                         </th>
+                                         <th scope="col">
+                                             <div class="slds-truncate" title="Contact">Payment</div>
+                                         </th>
+                                         <th scope="col">
+                                             <div class="slds-truncate" title="User">User</div>
+                                         </th>
+                                         <th scope="col">
+                                             <div class="slds-truncate" title="Receipt">Receipt No</div>
+                                         </th> 
+                                     </tr>
+                                 </thead>
+                                 <tbody>
+                                 	<tr>
+                                            <td data-label="Account Name">
+                                                <div class="slds-truncate" title="Cloudhub">5/24/2018</div>
+                                            </td>
+                                            <td data-label="Account Name">
+                                                <div class="slds-truncate" title="Cloudhub">Phung Li</div>
+                                            </td>
+                                            <td data-label="Close Date">
+                                                <div class="slds-truncate" title="4/14/2015">Lily Tan</div>
+                                            </td>
+                                            <td data-label="Prospecting">
+                                                <div class="slds-truncate" title="Prospecting">Cash</div>
+                                            </td>
+                                            <td data-label="Confidence">
+                                                <div class="slds-truncate" title="20%">20</div>
+                                            </td>
+                                            <td data-label="Amount">
+                                                <div class="slds-truncate" title="$25k">$20</div>
+                                            </td>
+                                            
+                                        <td data-label="Amount">
+                                                <div class="slds-truncate" title="$25k">$25000</div>
+                                            </td>
+                                        <td data-label="Contact">
+                                                <div class="slds-truncate" title="$25k">Hang Lui</div>
+                                            </td>
+                                        <td data-label="Amount">
+                                                <div class="slds-truncate" title="$25k">$25000</div>
+                                            </td>
+                                        
+                                    </tr>
+                                 </tbody>
+                             </table>  
+                         </div>
+                         <footer class="slds-card__footer">
+                             <button class="slds-button slds-button_brand">ETC</button>
+                             <button class="slds-button slds-button_brand">Subsidy Plan</button>
+                         </footer>
+                     </article> 
+                     
+           </div>
+                 <div class="slds-col">
+                     <article class="slds-card">
+                         <div class="slds-card__header slds-grid">
+                             <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                 <div class="slds-media__figure">
+                                     
+                                 </div>
+                                 <div class="slds-media__body">
+                                     <h2 class="slds-card__header-title">
+                                         Notes
+                                     </h2>
+                                 </div>
+                                 <div class="slds-no-flex">
+                                     <button class="slds-button slds-button_neutral">ADD</button>
+                                 </div>
+                             </header>
+                         </div>
+                         <div class="slds-card__body slds-card__body_inner" style="height:100px;">
+                             <div class="slds-form-element">
+                                 <div class="slds-form-element__control">
+                                     <span class="slds-checkbox">
+                                         <input type="checkbox" name="options" id="checkbox-2" value="checkbox-2" />
+                                         <label class="slds-checkbox__label" for="checkbox-2">
+                                             <span class="slds-checkbox_faux"></span>
+                                             <span class="slds-form-element__label">29-03-18</span>
+                                             <span>patient call in-Krystal</span>
+                                         </label>
+                                     </span>
+                                 </div>
+                             </div>
+                         </div>
+                     </article>
+                 </div>
+                 <div class="slds-col" >
+                     <article class="slds-card">
+                         <div class="slds-card__header slds-grid">
+                             <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                 
+                         <div class="slds-media__body">
+                       <span> Lily Tan</span>  
+                             <button class="slds-button slds-button_neutral slds-float_right">Close</button>
+                             <button class="slds-button slds-button_neutral slds-float_right">Edit</button>
+                             <button class="slds-button slds-button_neutral slds-float_right">More</button>
+                             <button class="slds-button slds-button_neutral slds-float_right">Play Audio</button>
+                         </div>
+                     </header>
+                 </div>
+                 <div class="slds-card__body slds-card__body_inner">
+                 	<div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <span>Health Card</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>First Name</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Last Name</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Salutation</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>DOB</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Company</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Occupation</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Race</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Religion</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Contact no(M)</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Email1:</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Address</span> <textarea id="textarea-id-01" class="slds-textarea" placeholder="Placeholder Text"></textarea>
+                        </div>
+                        <div class="slds-col">
+                            <span>Gender</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Marital Status</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Language</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Patient Status</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Source</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Campaign</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Referred Doctor</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Register Clinic</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Assign Clinic</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Assign Doctor</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                            <span>Contact no(H/O)</span> <input type="text" id="text-input-id-1" class="slds-input" />
+                        </div>
+                        <div class="slds-col">
+                            <article class="slds-card">
+                                <div class="slds-card__header slds-grid">
+                                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                       
+                                        <div class="slds-media__body">
+                                           <div style="border:1px solid black;height:400px;width:300px;">
+                                              <img alt="Person name" src="/assets/images/avatar2.jpg" title="User avatar" /> 
+                                            </div> 
+                                            <div class="slds-text-body_regular">VTD-V:0</div>
+                                            <div class="slds-text-body_regular">PV:na</div>
+                                            <div class="slds-text-body_regular">Lv:na</div>
+                                            <div class="slds-text-body_regular">NV:23-05-18 wed</div>
+                                            <div class="slds-text-body_regular">na</div>
+
+                            
+                                        </div>
+                                    </header>
+                                </div>
+                               
+                            </article>
+                        </div>
+                     </div>
+                 
+                 </div>
+                 
+             </article>
+                 </div>
+             </div>
+       </div>
+         <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+             <div class="slds-grid slds-wrap">
+                 <div class="slds-col slds-size_12-of-12">
+                     <article class="slds-card">
+                         <div class="slds-card__header slds-grid">
+                             <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                 
+                                 <div class="slds-media__body">
+                                     <h2 class="slds-card__header-title">
+                                             <span class="slds-text-heading_xsmall">New Appointment</span>
+                                     </h2>
+                                 </div> 
+                             </header>
+                             
+                         </div>
+                         <span class="slds-float_right">Map Appointments</span>
+                         <span class="slds-float_right">Calender View &nbsp;&nbsp;</span>
+                         <span class="slds-float_right">Manage &nbsp;&nbsp;</span> <br/><br/>
+                         <div class="slds-card__body slds-card__body_inner">
+                             <div class="slds-grid slds-gutters">
+                                 <div class="slds-col">
+                                 Date : <input type="text" id="date-input-id" placeholder=" " class="slds-input" />
+                                     <div class="slds-form-element">
+                                     <label class="slds-form-element__label" for="select-01">Time	</label>
+                                     <div class="slds-form-element__control">
+                                         <div class="slds-select_container">
+                                             <select class="slds-select" id="select-01">
+                                                 <option value="">Please select</option>
+                                                 <option>09:00</option>
+                                                 <option>09:15</option>
+                                                 <option>09:20</option>
+                                             </select>
+                                         </div>
+                                     </div>
+                                 </div>    
+                                 </div>
+                                 <div class="slds-col">
+                                     <div class="slds-form-element">
+                                     <label class="slds-form-element__label" for="select-01">Doctor	</label>
+                                     <div class="slds-form-element__control">
+                                         <div class="slds-select_container">
+                                             <select class="slds-select" id="select-01">
+                                                 <option value="">Please select</option>
+                                                 <option>Doctor 1</option>
+                                                 <option>Doctor 2</option>
+                                                 <option>Doctor 3</option>
+                                             </select>
+                                         </div>
+                                     </div>
+                                 </div>
+                                     <div class="slds-form-element">
+                                     <label class="slds-form-element__label" for="select-01">Appt type	</label>
+                                     <div class="slds-form-element__control">
+                                         <div class="slds-select_container">
+                                             <select class="slds-select" id="select-01">
+                                                 <option value="">Please select</option>
+                                                 <option>Adjustment</option>
+                                                 <option>Fracture</option>
+                                                 <option>Ligament Crack</option>
+                                             </select>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 </div>
+                                 <div class="slds-col">
+                                     <div class="slds-form-element">
+                                         <label class="slds-form-element__label" for="text-input-id-1">Timing</label>
+                                         <div class="slds-form-element__control">
+                                             <input type="text" id="text-input-id-1" class="slds-input" /> 
+                                             <button class="slds-button slds-button_brand slds-m-top_medium">Submit</button>
+                                         </div>
+                                     </div> 
+                                 </div>
+                             </div>
+                         </div>
+                         <footer class="slds-card__footer">
+                             <div class="slds-grid slds-wrap">
+                				 <div class="slds-col slds-size_12-of-12 slds-scrollable" style="height: 25rem; width: 26rem;" >
+                                 	<table width="100%" >
+                                        <tr>
+                                        	<td style="background-color:blue;Color:White;Border-right:1px solid black;">TIME</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">1</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">2</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">3</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">4</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">5</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">6</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">7</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">8</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">9</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">10</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">11</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">12</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">13</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">14</td>
+                                            <td style="background-color:blue;Color:White;Border-right:1px solid black;">15</td>
+                                            <td style="background-color:blue;Color:White;">Total</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">09:00</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;background-color:rgb(250,250,250);">09:15</td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="background-color:rgb(250,250,250);">0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">09:30</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;background-color:rgb(250,250,250);">09:45</td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="background-color:rgb(250,250,250);">0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">10:00</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;background-color:rgb(250,250,250);">10:15</td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="background-color:rgb(250,250,250);">0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">10:30</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;background-color:rgb(250,250,250);">10:45</td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>                                            
+                                            <td style="background-color:rgb(250,250,250);">0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">11:00</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;background-color:rgb(250,250,250);">11:15</td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="border-right:1px solid black;background-color:rgb(250,250,250);"></td>
+                                            <td style="background-color:rgb(250,250,250);">0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">11:30</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">11:45</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">12:00</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                            <tr>
+                                        	<td style="border-right:1px solid black;">12:15</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">12:30</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">12:45</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">1:00</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr> 
+                                            <tr>
+                                        	<td style="border-right:1px solid black;">1:15</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">1:30</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">1:45</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                        	<td style="border-right:1px solid black;">2:00</td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td style="border-right:1px solid black;"></td>
+                                            <td>0</td>
+                                        </tr>
+                                    </table>
+                                     
+                                 </div>
+                             </div>
+                         </footer>
+                     </article>
+                 </div>
+                 <div class="slds-col slds-size_6-of-12" >
+                     <article class="slds-card"  >
+                         <div class="slds-card__header slds-grid">
+                             <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                 
+                                 <div class="slds-media__body">
+                                     <h2 class="slds-card__header-title">
+                                             <span class="slds-text-heading_small">Subsidy Plan</span>
+                                     </h2>
+                                 </div>
+                             </header>
+                         </div>
+                         <div class="slds-card__body slds-card__body_inner">
+                         	<div class="slds-scrollable" style="height: 16.5rem; width: 10rem;">
+                                <p>Current Plan</p>
+                                    <p>Visit Allowed</p>
+                                    <p>Visit Used</p>
+                                    <p>Visit Balance</p>
+                                    <p>Prepaid Balance</p>
+                                    <p>Purchase Date</p>
+                                    <p>Start Date</p>
+                                <p>Next Plan</p>
+                                    <p>Visit Allowed</p>
+                                    <p>Visit Used</p>
+                                    <p>Visit Balance</p>
+                                    <p>Prepaid Balance</p>
+                                    <p>Purchase Date</p>
+                                    <p>Start Date</p>
+                                 <p>Visit Balance</p>
+                                    <p>Prepaid Balance</p>
+                                    <p>Purchase Date</p>
+                                    <p>Start Date</p>
+                                <p>Next Plan</p>
+                                    <p>Visit Allowed</p>
+                                    <p>Visit Used</p>
+                                    <p>Visit Balance</p>
+                                    <p>Prepaid Balance</p>
+                             </div>
+                         </div>
+                         <footer class="slds-card__footer">
+                             <button class="slds-button slds-button_neutral">Print</button>
+                         </footer>
+                     </article>
+                 </div>
+                 <div class="slds-col slds-size_6-of-12" >
+                     <div class="slds-grid slds-grid_vertical">
+                         <div class="slds-col">
+                             <article class="slds-card">
+                                 <div class="slds-card__header slds-grid">
+                                     <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                         
+                                         <div class="slds-media__body">
+                                             <h2 class="slds-card__header-title">
+                                                     <span class="slds-text-heading_xsmall">Appointments</span>
+                                             </h2>
+                                         </div>
+                                     </header>
+                                 </div>
+                                 <div class="slds-card__body slds-card__body_inner" style="height:100px;">
+                                     <span class="slds-float_right"> Missed Apointments : 27	 </span>
+                                     <span class="slds-float_right"> Won Apointments : 20	 </span>
+                                 </div>
+                             </article>
+                         </div>
+                         <div class="slds-col">
+                             <article class="slds-card">
+                                 <div class="slds-card__header slds-grid">
+                                     <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                         <div class="slds-media__body">
+                                                     <span class="slds-text-heading_xsmall">Calender</span>
+                                         </div>
+                                     </header>
+                                 </div>
+                                 <div class="slds-card__body slds-card__body_inner">
+                             		<div style="font-size:8px;" id='calendar'></div>    	
+                                 </div>
+                             </article>
+                             
+                             
+                             
+                         </div>
+                     </div>    
+                 </div>
+             </div>
+         </div>
+     </div>
+</div>    
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page sidebar="false" showHeader="false" controller="MyCustomLookupController" >
+<apex:sectionHeader title="Demo"  subtitle="Custom Lookup" />
+
+  <apex:form id="myForm">  
+    <apex:PageBlock id="PageBlock">        
+      <apex:pageBlockSection columns="1" title="Custom Lookup">
+     <apex:inputField id="Account" value="{!acc.name}" /> 
+      </apex:pageBlockSection>
+    </apex:PageBlock>
+  </apex:form>
+
+          
+
+</apex:page>

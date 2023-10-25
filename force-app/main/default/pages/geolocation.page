@@ -1,0 +1,50 @@
+<apex:page controller="locatitonCTRL" >
+<html>
+<body>
+
+<apex:form >
+<apex:actionFunction name="controllerCall" action="{!loc}"/>
+<Apex:inputText id="box" value="{!lat}" ></Apex:inputText><br/>
+<Apex:inputText id="box2" value="{!lon}" ></Apex:inputText><br/>
+
+</apex:form>
+<button onclick="getLocation()">Try It</button>
+
+<p>Click the button to get your coordinates.</p>
+
+
+
+<p id="demo"></p>
+
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+     document.getElementById('j_id0:j_id2:box').value=position.coords.latitude;
+    document.getElementById('j_id0:j_id2:box2').value=position.coords.longitude;
+      
+        controllerCall();
+}
+
+
+    
+        
+       
+   
+
+</script>
+
+</body>
+</html>
+</apex:page>

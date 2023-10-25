@@ -1,0 +1,14 @@
+<aura:component >
+	<table border='1'>
+        <tr>
+    <td>
+        Hello World !
+    </td>
+            <td>
+            party
+            
+            </td>
+            
+            </tr>
+    </table>
+</aura:component>

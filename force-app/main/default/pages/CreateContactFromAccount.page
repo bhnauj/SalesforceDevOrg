@@ -1,0 +1,14 @@
+<apex:page lightningStylesheets="true" standardController="Account" extensions="createContactFromAccountApexController">
+    <apex:form >
+        <apex:pageBlock >
+          
+            <apex:pageBlockSection >
+                <apex:inputField value="{!con.FirstName}"/>
+                <apex:inputField value="{!con.LastName}"/>
+                <apex:inputField value="{!con.Email}"/>
+                <apex:inputField value="{!con.Phone}"/>
+            </apex:pageBlockSection>
+            <center><apex:commandButton value="Save" action="{!saveMethod}"/></center>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
