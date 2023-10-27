@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_rating__c</fullName>
+    <description>indicates how closely a candidate fits the position applied to</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How well does the candidate fits the job description?</inlineHelpText>
+    <label>Prospect rating</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hot</fullName>
+                <default>false</default>
+                <label>Hot</label>
+            </value>
+            <value>
+                <fullName>Warm</fullName>
+                <default>false</default>
+                <label>Warm</label>
+            </value>
+            <value>
+                <fullName>Cool</fullName>
+                <default>false</default>
+                <label>Cool</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
