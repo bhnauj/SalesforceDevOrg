@@ -17,7 +17,7 @@ trigger rollup on Contact (after insert,after delete) {
         }
    }     
         
-            list<account> acclist1= new list<account>();
+    list<account> acclist1= new list<account>();
     list<account> acclist=[select id,NumberofLocations__c,(select accountid from contacts) from account where id IN:accid];
         for(account acc:acclist){
             for(contact cc:acc.contacts){

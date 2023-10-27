@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_rating__c</fullName>
+    <externalId>false</externalId>
+    <label>Prospect rating</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>hot</fullName>
+                <default>false</default>
+                <label>hot</label>
+            </value>
+            <value>
+                <fullName>warm</fullName>
+                <default>false</default>
+                <label>warm</label>
+            </value>
+            <value>
+                <fullName>cool</fullName>
+                <default>false</default>
+                <label>cool</label>
+            </value>
+            <value>
+                <fullName>Manager Favorite</fullName>
+                <default>false</default>
+                <label>Manager Favorite</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

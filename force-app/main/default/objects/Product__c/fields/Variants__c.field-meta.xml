@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Variants__c</fullName>
+    <externalId>false</externalId>
+    <label>Variants</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vanaspati ghee</fullName>
+                <default>false</default>
+                <label>Vanaspati ghee</label>
+            </value>
+            <value>
+                <fullName>Olein</fullName>
+                <default>false</default>
+                <label>Olein</label>
+            </value>
+            <value>
+                <fullName>Soyabean</fullName>
+                <default>false</default>
+                <label>Soyabean</label>
+            </value>
+            <value>
+                <fullName>Mustard</fullName>
+                <default>false</default>
+                <label>Mustard</label>
+            </value>
+            <value>
+                <fullName>Cotton Seed</fullName>
+                <default>false</default>
+                <label>Cotton Seed</label>
+            </value>
+            <value>
+                <fullName>Palm</fullName>
+                <default>false</default>
+                <label>Palm</label>
+            </value>
+            <value>
+                <fullName>Sunflower</fullName>
+                <default>false</default>
+                <label>Sunflower</label>
+            </value>
+            <value>
+                <fullName>Kachchighani</fullName>
+                <default>false</default>
+                <label>Kachchighani</label>
+            </value>
+            <value>
+                <fullName>Pakkighani</fullName>
+                <default>false</default>
+                <label>Pakkighani</label>
+            </value>
+            <value>
+                <fullName>Steamed</fullName>
+                <default>false</default>
+                <label>Steamed</label>
+            </value>
+            <value>
+                <fullName>Par -Boiled</fullName>
+                <default>false</default>
+                <label>Par -Boiled</label>
+            </value>
+            <value>
+                <fullName>White Rice</fullName>
+                <default>false</default>
+                <label>White Rice</label>
+            </value>
+            <value>
+                <fullName>Tomato</fullName>
+                <default>false</default>
+                <label>Tomato</label>
+            </value>
+            <value>
+                <fullName>Bottle Gaurd</fullName>
+                <default>false</default>
+                <label>Bottle Gaurd</label>
+            </value>
+            <value>
+                <fullName>Lady Finger</fullName>
+                <default>false</default>
+                <label>Lady Finger</label>
+            </value>
+            <value>
+                <fullName>Brinjal</fullName>
+                <default>false</default>
+                <label>Brinjal</label>
+            </value>
+            <value>
+                <fullName>Grapes</fullName>
+                <default>false</default>
+                <label>Grapes</label>
+            </value>
+            <value>
+                <fullName>Gauvava</fullName>
+                <default>false</default>
+                <label>Gauvava</label>
+            </value>
+            <value>
+                <fullName>Culli Flower</fullName>
+                <default>false</default>
+                <label>Culli Flower</label>
+            </value>
+            <value>
+                <fullName>Cabage</fullName>
+                <default>false</default>
+                <label>Cabage</label>
+            </value>
+            <value>
+                <fullName>Watermelon</fullName>
+                <default>false</default>
+                <label>Watermelon</label>
+            </value>
+            <value>
+                <fullName>Green Peas</fullName>
+                <default>false</default>
+                <label>Green Peas</label>
+            </value>
+            <value>
+                <fullName>CAPSICUM</fullName>
+                <default>false</default>
+                <label>CAPSICUM</label>
+            </value>
+            <value>
+                <fullName>Bitter Gourd</fullName>
+                <default>false</default>
+                <label>Bitter Gourd</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
